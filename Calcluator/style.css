@@ -1,6 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: myFont;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(F:\coding\FrontEnd\Projects\Calcluator\font\digital-7\myFont.ttf);
 }
 
 body{
@@ -13,28 +19,43 @@ body{
 
 #Calculator {
     padding: 8px;
-    background: linear-gradient(rgb(0, 48, 73) , rgb(13, 94, 137));
+    background: linear-gradient(rgb(0, 50, 70) , rgb(15, 95, 135));
     border-radius: 10px;
-    
+    border: solid white 3px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .8);
 }
 
 #output input{
     height: 38px;
-    width: 182px;
+    width: 180px;
     margin-bottom: 5px;
     padding: 5px;
     font-size: 30px;
     text-align: right;
     border-radius: 5px;
-    border: none;
+    border: double 2px black;
 
-    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
+
+
 }
 
-#C{
+#del {
+    background-color: orange;
+    transition: all 0.3s ease-in-out;
+}
+
+#del:hover{
+    background: linear-gradient(red , rgb(255, 136, 0));
+    color: black;
+    border: 2px white solid;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
+}
+
+#C {
     width: 94px;
     background-color: orange;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn , .btn-op{
@@ -44,29 +65,29 @@ body{
     margin: 2px 0px;
     font-size: 18px;
     border-radius: 5px;
-    transition: all .2s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .btn-op{
     background: linear-gradient(gray , rgb(161, 161, 161));
     color: white;
-    transition: all .2s ease-in-out; 
+    transition: all .3s ease-in-out; 
 }
 
 #C:hover{
-    background: linear-gradient(rgb(255, 212, 132) , rgb(255, 191, 71));
+    background: linear-gradient(red , rgb(255, 136, 0));
     color: black;
-    border: 2px rgb(255, 128, 0) solid;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+    border: 2px white solid;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
     
 
 }
 
 .btn:hover{
-    background: linear-gradient(rgba(0, 55, 80, 0.6) , rgba(0, 105, 153, 0.6));
+    background: linear-gradient(rgba(0, 55, 80, 0.6) , rgba(0, 135, 197, 0.6));
     color: white;
     border: 2px white solid;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
     
 }
 
@@ -74,5 +95,5 @@ body{
     background: linear-gradient(rgb(70, 70, 70) , rgb(110, 110, 110));
     color: white;
     border: 2px white solid;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
 }
